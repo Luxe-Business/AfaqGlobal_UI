@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Script from 'next/script'
 
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -31,6 +32,17 @@ export default function LocaleLayout({ children, params: { locale } }) {
         <NextIntlClientProvider messages={messages}>
           <WhatsAppProvider lang={locale}>{children}</WhatsAppProvider>
         </NextIntlClientProvider>
+
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-B19J1GVDFH" />
+      <Script id="google-analytics">
+        {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'G-B19J1GVDFH');
+        `}
+      </Script>
       </body>
     </html>
   );
