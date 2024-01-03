@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /private/
-Allow: *
-Sitemap: https://afaqglobal.com/sitemap.xml
+Disallow:
+
+Sitemap: https://www.afaqglobal.com/sitemap.xml
