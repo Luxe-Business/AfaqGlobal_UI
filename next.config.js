@@ -8,3 +8,4 @@ module.exports = nextConfig;
 module.exports = withNextIntl({
   // Other Next.js configuration ...
 });
+// update
