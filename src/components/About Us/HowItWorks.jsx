@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import "node_modules/react-modal-video/css/modal-video.css";
+import "react-modal-video/css/modal-video.css";
 import ModalVideo from "react-modal-video";
 
 const HowItWorks = ({ howDoesWorkData }) => {
